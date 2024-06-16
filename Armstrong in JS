@@ -1,1 +1,18 @@
+let num=prompt("enter the number");//153
+let numberDigit=num.length;//lenght 3
+let sum=0
+
+let temp= num;
+ if(temp > 0){
+     let remainder= temp %10;
+     sum =sum +(remainder ** numberDigit)
+     
+     temp=parseInt(temp /10 ) //convet into float to int
+ }
+if(sum==num){
+    console.log(`${num} is Armstrong number`)
+}else{
+ console.log(`${num} is not Armstrong number`)
+
+}
 
