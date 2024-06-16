@@ -1,1 +1,16 @@
+Last number are same {96.86 and 56}
 
+let a=prompt("enter number frist number to match last digit:")
+let b=prompt("enter number second number to match last digit:")
+let c=prompt("enter number third number to match last digit:")
+
+let resA=a % 10;
+let resB=b % 10;
+let resC=c % 10;
+
+if(resA===resB && resB===resC){
+    console.log(`${a},${b},${c} number are have same last digit`);
+}
+else{
+    console.log("number are different")
+}
