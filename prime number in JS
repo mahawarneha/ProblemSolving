@@ -1,1 +1,19 @@
+let arr=prompt("enter any number")//3
+let isPrime=true;
 
+if(arr==1){
+    console.log("neight prime nor composite")
+}else if (arr > 1){
+    for(let i=2; i<arr ; i++){
+        if(arr % i == 0){
+            isPrime=false;
+            break;
+        }
+    }
+if(isPrime){
+    console.log("prime number")
+}
+else{     
+    console.log("not prime")
+}
+}
